@@ -21,7 +21,7 @@ jobs:
     
     - name: Start API
       env:
-        MONGO_URI: ${{secrets.MONGO_URI}}
+        MONGO_URI: ${{Secrets.MONGO_URI}}
       run: node app.js &
     
     - name: Run performance test
